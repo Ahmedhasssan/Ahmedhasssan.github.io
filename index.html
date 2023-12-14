@@ -14,13 +14,19 @@
             }
     
             .experience-entry {
-                flex-basis: calc(33.333% - 20px); /* Adjust for three columns */
+            flex-basis: calc(33.333% - 20px); /* Adjust for three columns */
             min-width: 250px; /* Adjust minimum width as needed */
             max-width: 100%;
             }
+            .education-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Adjust the gap between items */
+            }
             .education-entry h3 {
-                margin-bottom: 5px;
-                color: #333; /* Or any color you prefer */
+            flex-basis: calc(50% - 20px); /* Adjust for three columns */
+            min-width: 300px; /* Adjust minimum width as needed */
+            max-width: 100%;
             }
         </style>
 </head>
@@ -82,7 +88,7 @@
 
 <section id="education">
     <h2>Education</h2>
-
+    <div class="education-section"></div>
     <div class="education-entry">
         <h3>Ph.D. in Electrical and Computer Engineering</h3>
         <p>Cornell University (Tech), NY</p>
@@ -106,7 +112,7 @@
         <p>COMSATS University, Islamabad, Pakistan</p>
         <p>2011 - 2015</p>
     </div>
-
+    </div>
 </section>
 
 <section id="experience">

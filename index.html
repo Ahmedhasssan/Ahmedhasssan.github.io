@@ -116,12 +116,19 @@
 
 <section id="projects">
     <h2>My Projects</h2>
-    <!-- Add your projects here -->
-</section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-    
+    <div>
+        <h3>Low-precision and Memory Efficient Neural Radiance Fields (NeRF) with Hardware Accelerator Design</h3>
+        <ul>
+            <li>Developed efficient NeRF with low-precision 3D Gaussian-based conical frustums for high-quality 3D scene generation.</li>
+            <li>Implemented fixed-grid-based quantization scheme for low-precision representation of 3D Gaussian (8-nit and 3-bit).</li> 
+            <li>Designed and implemented statistically-aware boundary clipping and quantization for low-precision representation MLP activations (8-bit precison)</li>. 
+            <li>Implemented adaptively rounding quantization scheme for low-precison weights representation to make the complete NeRF flow in 8-bit precision.</li>
+            <li>Replaced the compute inefficient high-precision positional encoding with the fixed-precision (8-bit and 9-bit) look-up tables of Mean and Covariance for software/hardware level efficiency.</li>
+            <li>Designed hardware Accelerator using look-up table approach for NeRF based 3D scene rendering.</li>
+            <li>Achieved high average PSNR 31.70 and reduced the rendering time to 102S for a complete scene at the hardware-level.</li>
+            <li>We have submitted this work in DAC2024 and the code will be available here after the paper notification.</li>
+        </ul>
+    </div>
 </section>
 
 <footer>

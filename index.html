@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- ... other head elements ... -->
+    
+        <style>
+            /* ... other styles ... */
+    
+            .experience-section {
+                column-count: 2;
+                column-gap: 40px;
+                margin: 20px;
+            }
+    
+            .experience-entry {
+                break-inside: avoid-column;
+                margin-bottom: 20px;
+            }
+        </style>
+</head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
@@ -52,42 +70,44 @@
 
 <section id="about">
     <h2>About Me</h2>
-    <p>I am a Ph.D. student at Cornell Tech (Cornell University), working as a Research Associate under the supervision of <a href="https://www.tech.cornell.edu/people/jae-sun-seo/" target="_blank">Professor Jae-sun Seo</a> in the Department of Electrical and Computer Engineering. My research area focuses on quantization, pruning, and neural architecture search for neuromorphic computing-based hardware applications.</p>
-    <p>I have recently completed my Master's degree from Government College University, Lahore, and hold a Bachelor's degree from COMSATS University Islamabad, Pakistan.</p>
+    <p>I am a Ph.D. student at Cornell Tech (Cornell University), working as a Research Associate under the supervision of <a href="https://www.tech.cornell.edu/people/jae-sun-seo/" target="_blank">Professor Jae-sun Seo</a> in the Department of Electrical and Computer Engineering. My research primarily revolves around the intricate processes of quantization, pruning, and neural architecture search for neuromorphic computing-based hardware applications.</p>
+    <p>I have completed my Master's degree from Government College University, Lahore, and hold a Bachelor's degree from COMSATS University Islamabad, Pakistan.</p>
 </section>
 
 <section id="experience">
     <h2>Work Experience</h2>
-    <div>
+    <div class="experience-section"></div>
+    <div class="experience-entry">
         <h3>Graduate Research Assistant</h3>
         <p>Cornell Tech (Cornell University), NY</p>
         <p>Aug 2023 – Present</p>
         <h4>Advisor: <a href="https://www.tech.cornell.edu/people/jae-sun-seo/" target="_blank">Professor Jae-sun Seo</a></h4>
     </div>
-    <div>
+    <div class="experience-entry">
         <h3>Design Technology Enablement Intern</h3>
         <p>Intel Corporations, Hillsboro, OR</p>
         <p>May 2022 – March 2023</p>
         <h4>Manager: <a href="https://www.linkedin.com/in/muhammad-ali-0bb811/" target="_blank"> Muhammad Ali</a></h4>
     </div>
-    <div>
+    <div class="experience-entry">
         <h3>Research Associate</h3>
         <p>Seo Lab, Arizona State University, AZ</p>
         <p>Aug 2021 – Aug 2023</p>
         <h4>Advisor: <a href="https://www.tech.cornell.edu/people/jae-sun-seo/" target="_blank">Professor Jae-sun Seo</a></h4>
     </div>
-    <div>
+    <div class="experience-entry">
         <h3>Research Associate</h3>
         <p>Optoelectronics Lab, ASU, AZ</p>
         <p>Aug 2020 – July 2021</p>
         <h4>Advisor: <a href="https://search.asu.edu/profile/2465249" target="_blank">Dr. Yu Yao</a></h4>
     </div>
-    <div>
+    <div class="experience-entry">
         <h3>Research Officer</h3>
         <p>Computer Vision Lab, KICS LHR,PK</p>
         <p>Mar 2020 – Oct 2020</p>
         <h4>Manager: <a href="https://www.kics.edu.pk/staff/usmanghani_khan" target="_blank">Muhammad Usman Ghani</a></h4>
     </div>
+</div>
 </section>
 
 <section id="teaching-experience">
@@ -170,7 +190,7 @@
 </section>
 
 <footer>
-    <p>© [Current Year] Your Name. All rights reserved.</p>
+    <p>© [2023] Ahmed Hasssan. All rights reserved.</p>
 </footer>
 
 </body>

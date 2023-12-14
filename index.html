@@ -121,12 +121,41 @@
         <ul>
             <li>Developed efficient NeRF with low-precision 3D Gaussian-based conical frustums for high-quality 3D scene generation.</li>
             <li>Implemented fixed-grid-based quantization scheme for low-precision representation of 3D Gaussian (8-nit and 3-bit).</li> 
-            <li>Designed and implemented statistically-aware boundary clipping and quantization for low-precision representation MLP activations (8-bit precison)</li>. 
+            <li>Designed and implemented statistically-aware boundary clipping and quantization for low-precision representation MLP activations (8-bit precison).</li> 
             <li>Implemented adaptively rounding quantization scheme for low-precison weights representation to make the complete NeRF flow in 8-bit precision.</li>
             <li>Replaced the compute inefficient high-precision positional encoding with the fixed-precision (8-bit and 9-bit) look-up tables of Mean and Covariance for software/hardware level efficiency.</li>
             <li>Designed hardware Accelerator using look-up table approach for NeRF based 3D scene rendering.</li>
-            <li>Achieved high average PSNR 31.70 and reduced the rendering time to 102S for a complete scene at the hardware-level.</li>
+            <li>Achieved high average PSNR 31.70 and reduced the rendering time to 102s for a complete scene at the hardware-level.</li>
             <li>We have submitted this work in DAC2024 and the code will be available here after the paper notification.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Low-compute Spiking Neural Network (LC-SNN) Architectures for Neurmorphic hardware-based Computer Vision</h3>
+        <ul>
+            <li>Designed a 3-bit precision integer-only quantization scheme for membrane potential for VGG-SNN and Yolo-SNN architectures.</li>
+            <li>Designed the complete SNN quantization flow to compress the models.</li> 
+            <li>Implemented Spatial-Channel pruning with fully quantized SNN to develop (LC-QESNN) for efficient edge computations.</li> 
+            <li>Benchmarked LC-QESNN on complex datasets with >3X memory and >5X FLOPs reduction within less than 1% accuracy drop.</li>
+            <li>We have submitted this work in DAC2024 and the code will be available here after the paper notification.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Self-supervised Learning with Vision Transformers for Downstream Tasks</h3>
+        <ul>
+            <li>Implemented mainstream vision transformer architectures for better feature learning on unlabeled data</li>
+            <li>Simplified the pre-trained model to develop its tiny version for hardware-level translation.</li> 
+            <li>Pre-trained the model on ImageNet-100 and ImageNet-1000 dataset and validated the slight imprivement in comparison to the currest SOTA works</li> 
+            <li>This project is in-progress.</li>
+        </ul>
+    </div>
+    div>
+        <h3>Low Precision CNN-based Architecture Design for Information Processing from Event-based Camera</h3>
+        <ul>
+            <li>Designed low-precision sparse autoencoder architecture for Event (Prophesee-Gen1 and Prophesee-Gen4) data compression.</li>
+            <li>Designed log of two-based quantization module to covert 32-bit weights and activations to 4-bit and 2-bit precision.</li> 
+            <li>Achieved high accuracy >91% and mean average precision 0.30 with >10x image data compression for both Prophesee-Gen1 and Prophesee-Gen4 dataset.</li> 
+            <li>Designed IMC-based hardware using proposed sparse and fully quantized autoencoder architecture for air traffic control applications.</li>
+            <li>Algorithm implementation <a href="https://github.com/Ahmedhasssan/Spatial-temporal-DVS-data-compression-using-low-precision-autoencoder" target="_blank">repo</a> is availble here.</li>
         </ul>
     </div>
 </section>

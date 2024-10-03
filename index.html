@@ -207,6 +207,18 @@
 </section>
 
 <section id="projects">
+    <h2>Research Projects on Large Language Models</h2>
+    <div>
+        <h3>Optimization of Prefill Time/ Time to First Token Generation of Mamba (SSM) for Faster On-device Inference</h3>
+        <ul>
+            <li>Developed on-device LLM latency profiler for Mobile devices using Llamacpp plateform.</li>
+            <li>Performed LLM latency profiling on CPU, GPU, and Samsung S23 Mobile CPU using Llamacpp to identify latency hotspots of different operations.</li>
+            <li>Compared the throughput and latency of Transformer and Mamba models on CPU, GPU, and Samsung S23 Mobile CPU.</li> 
+            <li>Implemented divide and concur-based Parallel Scan on Pytorch and Llamacpp to reduce the on-device prefill/first token generation latency for Mamba-1.4 and Mamba-2.8 models with higher context length >5k.</li> 
+            <li>Reduced the prompt eval (TTFT) latency by Log(N) and achieved 1.39X speedup for Mamba 1.1B on a Samsung S23 device using Llamacpp.</li>
+            <li>Working on Multi-threaded parallel scan to support the 5 threads of Samsung S23 Mobile device.</li>
+        </ul>
+    </div>
     <h2>Research Projects on Computer Vision</h2>
     <div>
         <h3>Low-precision and Memory Efficient Neural Radiance Fields (NeRF) with Hardware Accelerator Design</h3>

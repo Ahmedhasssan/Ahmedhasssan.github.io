@@ -230,34 +230,30 @@
     <div>
         <h3 style="color: blue;">Parametrized Effecient Fine-tuning of LLMs with SFT, DPO and ORPO on custom datasets</h3>
         <ul>
-            <li>Developed on-device LLM latency profiler for Mobile devices using Llamacpp plateform.</li>
-            <li>Performed LLM latency profiling on CPU, GPU, and Samsung S23 Mobile CPU using Llamacpp to identify latency hotspots of different operations.</li>
-            <li>Compared the throughput and latency of Transformer and Mamba models on CPU, GPU, and Samsung S23 Mobile CPU.</li> 
-            <li>Implemented divide and concur-based Parallel Scan on Pytorch and Llamacpp to reduce the on-device prefill/first token generation latency for Mamba-1.4 and Mamba-2.8 models with higher context length >5k.</li> 
-            <li>Reduced the prompt eval (TTFT) latency by Log(N) and achieved 1.39X speedup for Mamba 1.1B on a Samsung S23 device using Llamacpp.</li>
-            <li>Working on Multi-threaded parallel scan to support the 5 threads of Samsung S23 Mobile device.</li>
+            <li>Implemented instruction tuned SmolLM2-135M-Instruct model by fine-tuning on "ultrafeedback_binarized" dataset.</li>
+            <li>Performed finetuning using SFT, DPO and ORPO to bechmark the performance of different apporaches.</li>
+            <li>Prepared fine-tuning data based on prompt-content pairs formate.</li> 
+            <li>Findings: DPO includes perefrence alignment to imporve the LLM performance. SFT help LLM learn the domain specific knowledge.</li>
             <li style="background-color: lightyellow; padding: 5px; border-left: 5px solid blue;">
-                <strong>Skills learned:</strong> LLM inference on mobile devices, edge computing, LLM profiling, latency optimization, multi-threading, and parallel computation.
+                <strong>Skills learned:</strong> LLM inference instruct-tuning, Optimized fine-tuning.
             </li>
             <li style="background-color: lightyellow; padding: 5px; border-left: 5px solid blue;">
-                <strong>Tools learned:</strong> Termux for mobile devices, Llama.cpp and Linux.
+                <strong>Tools learned:</strong> GPU and Linux.
             </li>
         </ul>
     </div>
     <div>
         <h3 style="color: blue;">RAG guided LLMs Inference on custom datasets</h3>
         <ul>
-            <li>Developed on-device LLM latency profiler for Mobile devices using Llamacpp plateform.</li>
-            <li>Performed LLM latency profiling on CPU, GPU, and Samsung S23 Mobile CPU using Llamacpp to identify latency hotspots of different operations.</li>
-            <li>Compared the throughput and latency of Transformer and Mamba models on CPU, GPU, and Samsung S23 Mobile CPU.</li> 
-            <li>Implemented divide and concur-based Parallel Scan on Pytorch and Llamacpp to reduce the on-device prefill/first token generation latency for Mamba-1.4 and Mamba-2.8 models with higher context length >5k.</li> 
-            <li>Reduced the prompt eval (TTFT) latency by Log(N) and achieved 1.39X speedup for Mamba 1.1B on a Samsung S23 device using Llamacpp.</li>
-            <li>Working on Multi-threaded parallel scan to support the 5 threads of Samsung S23 Mobile device.</li>
+            <li>Prepared RAG pipeline for LLM inference.</li>
+            <li>Used Llama_index and "BAAI/bge-small-en-v1.5" embeddings to prepare the Vector Database for academic articles.</li>
+            <li>Deployed Llama_index QueryEnginer to generate the Prompts through RAG retrieval.</li> 
+            <li>Imporved model performance through RAG guiding process.</li> 
             <li style="background-color: lightyellow; padding: 5px; border-left: 5px solid blue;">
-                <strong>Skills learned:</strong> LLM inference on mobile devices, edge computing, LLM profiling, latency optimization, multi-threading, and parallel computation.
+                <strong>Skills learned:</strong> LLM inference on RAG, Prompt Engineering, RAG, Text Embedding.
             </li>
             <li style="background-color: lightyellow; padding: 5px; border-left: 5px solid blue;">
-                <strong>Tools learned:</strong> Termux for mobile devices, Llama.cpp and Linux.
+                <strong>Tools learned:</strong> Llama_index.
             </li>
         </ul>
     </div>
